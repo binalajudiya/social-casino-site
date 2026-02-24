@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Fun Reels - Free Casino Games</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🎰</span>
+                <span class="logo-text">Social Fun Reels</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="cta-btn">Play Now</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Social Fun<br>Reels</h1>
+                <p>Experience the thrill of casino gaming without spending a dime! Play for fun, compete with friends, and enjoy endless entertainment.</p>
+                <button class="play-btn" onclick="scrollToGames()">Start Playing Free</button>
+                <div class="hero-badges">
+                    <span class="badge">🎮 100% Free</span>
+                    <span class="badge">🔒 Safe & Secure</span>
+                    <span class="badge">🎯 No Download</span>
+                </div>
+            </div>
+            <div class="hero-character">
+                <div class="character-placeholder">
+                    <!-- Purple character illustration would go here -->
+                    <div class="character-circle">
+                        <span class="character-emoji">🎭</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Banner -->
+    <div class="trust-banner">
+        ⭐ Trusted by over 100,000+ players worldwide • 100% Free to Play • No Purchase Required
+    </div>
+
+    <!-- Games Section -->
+    <section class="games-section" id="games">
+        <h2>Play The Best<br>Games Here</h2>
+        <div class="games-grid">
+            <div class="game-card" onclick="openGame('slots')">
+                <div class="game-icon">🎰</div>
+                <h3>Lucky Slots</h3>
+                <p>Spin to win!</p>
+            </div>
+            <div class="game-card" onclick="openGame('poker')">
+                <div class="game-icon">🃏</div>
+                <h3>Video Poker</h3>
+                <p>Test your hand</p>
+            </div>
+            <div class="game-card" onclick="openGame('roulette')">
+                <div class="game-icon">🎯</div>
+                <h3>Roulette Rush</h3>
+                <p>Place your bets</p>
+            </div>
+            <div class="game-card" onclick="openGame('blackjack')">
+                <div class="game-icon">🂡</div>
+                <h3>Blackjack 21</h3>
+                <h3>Beat the dealer</h3>
+            </div>
+            <div class="game-card" onclick="openGame('bingo')">
+                <div class="game-icon">🎲</div>
+                <h3>Mega Bingo</h3>
+                <p>Call your numbers</p>
+            </div>
+        </div>
+        <button class="view-all-btn">View All Games</button>
+    </section>
+
+    <!-- Why Play Section -->
+    <section class="why-play">
+        <div class="why-play-content">
+            <div class="why-play-text">
+                <h2>Why Play<br>With Us</h2>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">💎</div>
+                        <h3>100% Free to Play</h3>
+                        <p>No deposits, no hidden fees. Pure entertainment with virtual currency only.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Daily Rewards</h3>
+                        <p>Get free coins every day. The more you play, the more you earn!</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Safe & Secure</h3>
+                        <p>Your privacy matters. We never ask for payment information.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="why-play-character">
+                <div class="character-placeholder">
+                    <div class="character-circle">
+                        <span class="character-emoji">⚡</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- No Purchase Section -->
+    <section class="no-purchase">
+        <h2>No Purchase<br>Required</h2>
+        <p>Enjoy all our games completely free. This is social gaming at its finest!</p>
+        <button class="cta-btn">Get Started</button>
+    </section>
+
+    <!-- Trust Banner 2 -->
+    <div class="trust-banner trust-banner-alt">
+        🎮 Social Casino • Entertainment Only • No Real Money Gambling
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>FAQ</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I win real money playing these games?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No. This is a social casino for entertainment only. You cannot win real money or prizes. All games use virtual currency.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do I need to download anything?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No downloads needed! Play directly in your browser on desktop or mobile.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is it really free?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, 100% free. We never ask for payment information or deposits.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What happens if I run out of coins?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You get free daily bonuses! Just come back each day to claim your coins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">🎰</span>
+                <span>Social Fun Reels</span>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </nav>
+            <div class="compliance-logos">
+                <div class="compliance-item">
+                    <span class="compliance-badge">18+</span>
+                </div>
+                <div class="compliance-item">
+                    <span class="compliance-badge">🎮 GameAware</span>
+                </div>
+            </div>
+            <p class="disclaimer">
+                FOR ENTERTAINMENT ONLY. This is a social casino. You cannot win real money or prizes. 
+                Past performance is not indicative of future results. Must be 18+ to play.
+            </p>
+            <p class="copyright">© 2024 Social Fun Reels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Game Popup Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeGame()">&times;</span>
+            <div id="gameContainer"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

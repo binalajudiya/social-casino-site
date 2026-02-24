@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Social Fun Reels</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🎰</span>
+                <span class="logo-text">Social Fun Reels</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="cta-btn">Play Now</button>
+        </nav>
+    </header>
+
+    <!-- Contact Content -->
+    <div class="form-container">
+        <h1 style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">Get In Touch</h1>
+        <p style="text-align: center; color: var(--text-gray); margin-bottom: 3rem;">
+            Have questions or feedback? We'd love to hear from you!
+        </p>
+
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required placeholder="Tell us more..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div id="successMessage" style="display: none; background: rgba(0, 212, 255, 0.2); border: 2px solid var(--accent-cyan); padding: 1.5rem; border-radius: 15px; margin-top: 2rem; text-align: center;">
+            <h3 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">✅ Message Sent!</h3>
+            <p style="color: var(--text-gray);">Thank you for reaching out. We'll get back to you soon!</p>
+        </div>
+    </div>
+
+    <!-- Contact Info -->
+    <section class="why-play">
+        <div class="why-play-content" style="grid-template-columns: 1fr;">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 style="margin-bottom: 2rem;">Other Ways to Reach Us</h2>
+                <div class="features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                    <div class="feature" style="flex-direction: column; text-align: center;">
+                        <div class="feature-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>support@socialfunreels.com</p>
+                    </div>
+                    <div class="feature" style="flex-direction: column; text-align: center;">
+                        <div class="feature-icon">💬</div>
+                        <h3>Live Chat</h3>
+                        <p>Available 24/7 in-game</p>
+                    </div>
+                    <div class="feature" style="flex-direction: column; text-align: center;">
+                        <div class="feature-icon">📱</div>
+                        <h3>Social Media</h3>
+                        <p>@SocialFunReels</p>
+                    </div>
+                </div>
+                <p style="color: var(--text-gray); margin-top: 2rem;">
+                    We typically respond within 24 hours during business days.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">🎰</span>
+                <span>Social Fun Reels</span>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </nav>
+            <div class="compliance-logos">
+                <div class="compliance-item">
+                    <span class="compliance-badge">18+</span>
+                </div>
+                <div class="compliance-item">
+                    <span class="compliance-badge">🎮 GameAware</span>
+                </div>
+            </div>
+            <p class="disclaimer">
+                FOR ENTERTAINMENT ONLY. This is a social casino. You cannot win real money or prizes. 
+                Past performance is not indicative of future results. Must be 18+ to play.
+            </p>
+            <p class="copyright">© 2024 Social Fun Reels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Hide form
+            document.getElementById('contactForm').style.display = 'none';
+            
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // Scroll to success message
+            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+            
+            // Reset after 5 seconds
+            setTimeout(() => {
+                document.getElementById('contactForm').style.display = 'block';
+                document.getElementById('successMessage').style.display = 'none';
+                document.getElementById('contactForm').reset();
+            }, 5000);
+        }
+    </script>
+</body>
+</html>

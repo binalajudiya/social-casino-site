@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Social Fun Reels</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🎰</span>
+                <span class="logo-text">Social Fun Reels</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html" class="active">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="cta-btn">Play Now</button>
+        </nav>
+    </header>
+
+    <!-- Games Section -->
+    <section class="games-section" style="padding-top: 4rem;">
+        <h2>All Our<br>Amazing Games</h2>
+        <p style="color: var(--text-gray); max-width: 600px; margin: 0 auto 3rem; font-size: 1.1rem;">
+            Choose from our collection of exciting casino games. All games are 100% free to play with virtual currency!
+        </p>
+        
+        <div class="games-grid">
+            <div class="game-card" onclick="openGame('slots')">
+                <div class="game-icon">🎰</div>
+                <h3>Lucky Slots</h3>
+                <p>Classic slot machine action with multiple winning combinations!</p>
+            </div>
+            
+            <div class="game-card" onclick="openGame('poker')">
+                <div class="game-icon">🃏</div>
+                <h3>Video Poker</h3>
+                <p>Five-card draw poker at your fingertips. Build the best hand!</p>
+            </div>
+            
+            <div class="game-card" onclick="openGame('roulette')">
+                <div class="game-icon">🎯</div>
+                <h3>Roulette Rush</h3>
+                <p>Spin the wheel! Bet on red or black for instant wins.</p>
+            </div>
+            
+            <div class="game-card" onclick="openGame('blackjack')">
+                <div class="game-icon">🂡</div>
+                <h3>Blackjack 21</h3>
+                <p>Beat the dealer and hit 21. Classic card game excitement!</p>
+            </div>
+            
+            <div class="game-card" onclick="openGame('bingo')">
+                <div class="game-icon">🎲</div>
+                <h3>Mega Bingo</h3>
+                <p>Mark your cards and shout BINGO! Fun for everyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="why-play">
+        <div class="why-play-content" style="grid-template-columns: 1fr;">
+            <div class="why-play-text" style="max-width: 1000px; margin: 0 auto;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Game Features</h2>
+                <div class="features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div class="feature" style="flex-direction: column; text-align: center;">
+                        <div class="feature-icon">🎮</div>
+                        <h3>Instant Play</h3>
+                        <p>No downloads, no installations. Play directly in your browser!</p>
+                    </div>
+                    <div class="feature" style="flex-direction: column; text-align: center;">
+                        <div class="feature-icon">💰</div>
+                        <h3>Free Credits Daily</h3>
+                        <p>Get bonus credits every day you log in. Never run out!</p>
+                    </div>
+                    <div class="feature" style="flex-direction: column; text-align: center;">
+                        <div class="feature-icon">📱</div>
+                        <h3>Mobile Friendly</h3>
+                        <p>Play on any device - desktop, tablet, or smartphone.</p>
+                    </div>
+                    <div class="feature" style="flex-direction: column; text-align: center;">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Leaderboards</h3>
+                        <p>Compete with players worldwide and climb the ranks!</p>
+                    </div>
+                    <div class="feature" style="flex-direction: column; text-align: center;">
+                        <div class="feature-icon">🎉</div>
+                        <h3>Special Events</h3>
+                        <p>Join tournaments and special challenges for big wins!</p>
+                    </div>
+                    <div class="feature" style="flex-direction: column; text-align: center;">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Always Updated</h3>
+                        <p>New games and features added regularly. Never gets old!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">🎰</span>
+                <span>Social Fun Reels</span>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </nav>
+            <div class="compliance-logos">
+                <div class="compliance-item">
+                    <span class="compliance-badge">18+</span>
+                </div>
+                <div class="compliance-item">
+                    <span class="compliance-badge">🎮 GameAware</span>
+                </div>
+            </div>
+            <p class="disclaimer">
+                FOR ENTERTAINMENT ONLY. This is a social casino. You cannot win real money or prizes. 
+                Past performance is not indicative of future results. Must be 18+ to play.
+            </p>
+            <p class="copyright">© 2024 Social Fun Reels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Game Popup Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeGame()">&times;</span>
+            <div id="gameContainer"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
