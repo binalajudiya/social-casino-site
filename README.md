@@ -4,12 +4,11 @@ A complete static website for a social casino gaming platform. No backend, no da
 
 ## 🎰 Features
 
-- **5 Playable Games** that open in popups:
-  - 🎰 Lucky Slots (with spin animation)
-  - 🃏 Video Poker
-  - 🎯 Roulette Rush (with betting system)
-  - 🂡 Blackjack 21
-  - 🎲 Mega Bingo
+- **4 Playable Demo Games** that open in popups (via iframe):
+  - 🎰 Rocco Gallo
+  - ⚔️ Ronin's Honour
+  - 🗿 Rotiki
+  - 🎭 Royal Masquerade
 
 - **Responsive Design** - Works perfectly on desktop, tablet, and mobile
 - **Purple/Pink Theme** - Modern gradient design matching your reference
