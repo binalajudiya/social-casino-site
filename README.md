@@ -93,14 +93,13 @@ Replace the placeholder character circles with your purple character:
    ```
 
 ### Games
-Each game popup is defined in `js/main.js`:
-- `createSlotsGame()` - Slots machine
-- `createPokerGame()` - Video poker
-- `createRouletteGame()` - Roulette with betting
-- `createBlackjackGame()` - Blackjack 21
-- `createBingoGame()` - Bingo card
+Games are loaded via iframe from Play'n GO demo servers. The game URLs are defined in `js/main.js`:
+- **Rocco Gallo** - Farm-themed slot with exciting bonuses
+- **Ronin's Honour** - Samurai adventure slot
+- **Rotiki** - Island treasures cluster-pays slot
+- **Royal Masquerade** - Venetian ball mystery slot
 
-Feel free to enhance the game logic or add more features!
+To add more games, simply add new entries to the `gameUrls` object in `js/main.js` and create corresponding game cards in the HTML files.
 
 ### Text Content
 All text can be edited directly in the HTML files. No CMS needed - just open and edit!
@@ -109,10 +108,11 @@ All text can be edited directly in the HTML files. No CMS needed - just open and
 
 - **No Dependencies** - Pure vanilla JavaScript, no frameworks
 - **No Backend** - Completely static, runs in browser
-- **No Database** - Virtual currency stored in JavaScript variables (resets on refresh)
+- **No Database** - Games are loaded via iframe from external demo servers
 - **Mobile-First** - Responsive breakpoints at 768px
 - **Modern CSS** - Uses CSS Grid, Flexbox, gradients, animations
 - **Cross-Browser** - Works in all modern browsers
+- **External Games** - Uses Play'n GO demo game servers
 
 ## ⚠️ Important Notes
 
@@ -132,10 +132,7 @@ The contact form is **non-functional** (fake submission):
 - To make it real, integrate with a service like Formspree, EmailJS, or your own backend
 
 ### Game State
-Games reset when you close the popup or refresh the page. To persist:
-- Add `localStorage` for saving credits
-- Add user accounts with a backend
-- Use cookies for basic persistence
+Games are loaded from external demo servers (Play'n GO) via iframes. Each game session is independent and managed by the game provider. No local state is stored.
 
 ## 🎯 What's Next?
 
